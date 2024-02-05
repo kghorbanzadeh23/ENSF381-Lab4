@@ -13,7 +13,7 @@
 |                   |
 ## Screenshots
 ### Exersice B 
-![Exercise B Output](./ExerciseB.gif)
+![Exercise B](ExerciseB.gif)
 
 ### Exercise C 
-![Exercise C Output](./ExerciseC.gif)
+![Exercise C](ExerciseC.gif)
