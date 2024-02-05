@@ -11,103 +11,78 @@ Description : Responsive Layouts.
 <html>
 <head>
     <title>Responsive Webpage Layout</title>
-	<!--
-		Ensure that your HTML file includes the viewport meta tag in the <head> section. 
-		This tag is essential for responsive design as it tells the browser how to control the page's dimensions and scaling.
-	-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<link rel="menu" href="menu.css">
-
+	<link rel="stylesheet" style="text/css" href="menu.css">
     <style>
+		
 		body { margin: 0; padding: 0;}
 		img { max-width: 100%; height: auto; }
         .container { width: 100%;}
         .header, .footer { background-color: #f2f2f2; text-align: center; padding: 10px; }        
         .main { padding: 15px; margin-left: 150px;}		
-        .footer {bottom: 0; width: 100%;}
+        .footer { position: fixed; bottom: 0; width: 100%;}
         .news-item { padding: 10px; }
 		
-		.row::after{ 
-			content:"";
-			display: table;
-			clear:both			
+		.row { 
+			display: block;	
+			box-sizing: border-box;
 		}
 
 		.large, .medium, .small {
-			box-sizing: border-box;
-			display: 10px;
-			float: left;
-		}
-		.large {
 			width: 100%;
-		}
-		.medium{
-			width: 70%;
-		}
-		.small{
-			width: 30%;
+			box-sizing: border-box;
+			float: left;
 		}
 		
 		.gap {
 			margin-bottom: 20px;
-			clear: both;
-		}
-		.footer{
-			clear: both;
 		}
 
 		@media screen and (min-width: 769px) {			
-			.large {
+			.large { 
 				width: 100%;
 			}
-			.medium {
+			.medium { 
 				width: 70%;
 			}
-			.small {
+			.small { 
 				width: 30%;
-			}
+			 }
 		}
 
         @media screen and (max-width: 768px) {
-            .large{
+            .large { 
 				width: 100%;
 			}
-			.medium{
+			.medium { 
 				width: 60%;
 			}
-			.small {
-				width:40%;
-				float: none;
-			}
+			.small { 
+				width: 40%;
+			 }
+			 .body {
+				width: 100%;
+			 }
+			 .menu ul { 
+				width: 100%;
+			 }  
 
-			.header {
-				text-align: left;
-			}
-			.main {
-				margin-left: 0;
-			}
         }
 
         @media screen and (max-width: 480px) {
-			.large,
-			.medium,
-			.small {
+			.body {
 				width: 100%;
-				float:none
+			 }
+			 .menu ul { 
+				width: 100%;
+			 } 
+			 .news-item header h1 { 
+				font-size: 18px; 
 			}
-			.header{
-				text-align: left;
-			}
-			.main {
-				margin-left: 0;
-			}
+			.large, .medium, .small{
+				width: 100%;
+			} 
         }
-		.news-item h1 {
-			font-size: 18px;
-		}
-
-        
     </style>
 </head>
 <body>
