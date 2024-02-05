@@ -13,7 +13,7 @@
 |                   |
 ## Screenshots
 ### Exersice B 
-![Exercise B](ExerciseB.gif)
+![Exersise B](ExerciseB.gif)
 
 ### Exercise C 
 ![Exercise C](ExerciseC.gif)
